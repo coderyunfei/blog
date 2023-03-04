@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vscode 配置 | Jack 的博客</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/blog/favicon.ico">
+    <meta name="description" content="vue 教程">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.f40e0164.css" as="style"><link rel="preload" href="/blog/assets/js/app.f600d07b.js" as="script"><link rel="preload" href="/blog/assets/js/2.2efda491.js" as="script"><link rel="preload" href="/blog/assets/js/61.46bc7de5.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.5759b5a6.js"><link rel="prefetch" href="/blog/assets/js/100.c11c94a0.js"><link rel="prefetch" href="/blog/assets/js/101.7e06bfc4.js"><link rel="prefetch" href="/blog/assets/js/102.cb80e24c.js"><link rel="prefetch" href="/blog/assets/js/103.9e50ef4d.js"><link rel="prefetch" href="/blog/assets/js/104.f367892d.js"><link rel="prefetch" href="/blog/assets/js/105.2533e8b9.js"><link rel="prefetch" href="/blog/assets/js/106.c75fd75e.js"><link rel="prefetch" href="/blog/assets/js/107.e85e7607.js"><link rel="prefetch" href="/blog/assets/js/108.37bf02c9.js"><link rel="prefetch" href="/blog/assets/js/109.e73f9d25.js"><link rel="prefetch" href="/blog/assets/js/11.db96e8cb.js"><link rel="prefetch" href="/blog/assets/js/110.bae650db.js"><link rel="prefetch" href="/blog/assets/js/111.b7182f59.js"><link rel="prefetch" href="/blog/assets/js/112.5ffa81c6.js"><link rel="prefetch" href="/blog/assets/js/113.d3bcacac.js"><link rel="prefetch" href="/blog/assets/js/114.ab5de741.js"><link rel="prefetch" href="/blog/assets/js/115.1504cff6.js"><link rel="prefetch" href="/blog/assets/js/116.65ce00ed.js"><link rel="prefetch" href="/blog/assets/js/117.775044e3.js"><link rel="prefetch" href="/blog/assets/js/118.4b6fa708.js"><link rel="prefetch" href="/blog/assets/js/119.6cf264d3.js"><link rel="prefetch" href="/blog/assets/js/12.7cf66971.js"><link rel="prefetch" href="/blog/assets/js/120.232630d7.js"><link rel="prefetch" href="/blog/assets/js/121.c945ae58.js"><link rel="prefetch" href="/blog/assets/js/122.47855d40.js"><link rel="prefetch" href="/blog/assets/js/123.237e1c10.js"><link rel="prefetch" href="/blog/assets/js/124.b7b86e27.js"><link rel="prefetch" href="/blog/assets/js/125.b26e3cf6.js"><link rel="prefetch" href="/blog/assets/js/126.63ac6d42.js"><link rel="prefetch" href="/blog/assets/js/127.e04913de.js"><link rel="prefetch" href="/blog/assets/js/128.0915a9dd.js"><link rel="prefetch" href="/blog/assets/js/129.f022d29b.js"><link rel="prefetch" href="/blog/assets/js/13.28979dcf.js"><link rel="prefetch" href="/blog/assets/js/130.740fc885.js"><link rel="prefetch" href="/blog/assets/js/131.8f3276f3.js"><link rel="prefetch" href="/blog/assets/js/132.891ae0b7.js"><link rel="prefetch" href="/blog/assets/js/133.34268944.js"><link rel="prefetch" href="/blog/assets/js/134.ef560a04.js"><link rel="prefetch" href="/blog/assets/js/135.4951f5e9.js"><link rel="prefetch" href="/blog/assets/js/136.24ef2c84.js"><link rel="prefetch" href="/blog/assets/js/137.e10dbb5c.js"><link rel="prefetch" href="/blog/assets/js/138.1da174d1.js"><link rel="prefetch" href="/blog/assets/js/139.1111468f.js"><link rel="prefetch" href="/blog/assets/js/14.73229591.js"><link rel="prefetch" href="/blog/assets/js/140.be162f64.js"><link rel="prefetch" href="/blog/assets/js/141.2fce3f92.js"><link rel="prefetch" href="/blog/assets/js/142.a41604d1.js"><link rel="prefetch" href="/blog/assets/js/143.f9d1aa4c.js"><link rel="prefetch" href="/blog/assets/js/144.ab226e1c.js"><link rel="prefetch" href="/blog/assets/js/145.6324972b.js"><link rel="prefetch" href="/blog/assets/js/146.86b94236.js"><link rel="prefetch" href="/blog/assets/js/147.3ed1819e.js"><link rel="prefetch" href="/blog/assets/js/148.e821ae82.js"><link rel="prefetch" href="/blog/assets/js/149.9a720c7e.js"><link rel="prefetch" href="/blog/assets/js/15.4f1e002e.js"><link rel="prefetch" href="/blog/assets/js/150.227aac9d.js"><link rel="prefetch" href="/blog/assets/js/151.37aa781a.js"><link rel="prefetch" href="/blog/assets/js/152.0a82015a.js"><link rel="prefetch" href="/blog/assets/js/153.238470cb.js"><link rel="prefetch" href="/blog/assets/js/154.78fe63ef.js"><link rel="prefetch" href="/blog/assets/js/155.7f5fba4a.js"><link rel="prefetch" href="/blog/assets/js/156.cd63d656.js"><link rel="prefetch" href="/blog/assets/js/157.576bc526.js"><link rel="prefetch" href="/blog/assets/js/158.e2e30983.js"><link rel="prefetch" href="/blog/assets/js/159.8fe06f36.js"><link rel="prefetch" href="/blog/assets/js/16.52685b60.js"><link rel="prefetch" href="/blog/assets/js/160.956e0c74.js"><link rel="prefetch" href="/blog/assets/js/161.22693bfe.js"><link rel="prefetch" href="/blog/assets/js/162.722bbc15.js"><link rel="prefetch" href="/blog/assets/js/163.f00c05f0.js"><link rel="prefetch" href="/blog/assets/js/164.80cf33ec.js"><link rel="prefetch" href="/blog/assets/js/17.86d1ee1c.js"><link rel="prefetch" href="/blog/assets/js/18.3005d22e.js"><link rel="prefetch" href="/blog/assets/js/19.217ec3f9.js"><link rel="prefetch" href="/blog/assets/js/20.f819104b.js"><link rel="prefetch" href="/blog/assets/js/21.9c4ffbca.js"><link rel="prefetch" href="/blog/assets/js/22.0aea007b.js"><link rel="prefetch" href="/blog/assets/js/23.2eb06be8.js"><link rel="prefetch" href="/blog/assets/js/24.23dae9ca.js"><link rel="prefetch" href="/blog/assets/js/25.b70e20cb.js"><link rel="prefetch" href="/blog/assets/js/26.9a61c322.js"><link rel="prefetch" href="/blog/assets/js/27.ac5ed80b.js"><link rel="prefetch" href="/blog/assets/js/28.9114ae6c.js"><link rel="prefetch" href="/blog/assets/js/29.f8eab0e6.js"><link rel="prefetch" href="/blog/assets/js/3.6fec1244.js"><link rel="prefetch" href="/blog/assets/js/30.79b9fd10.js"><link rel="prefetch" href="/blog/assets/js/31.24f1d3e3.js"><link rel="prefetch" href="/blog/assets/js/32.cb8c8e14.js"><link rel="prefetch" href="/blog/assets/js/33.50564978.js"><link rel="prefetch" href="/blog/assets/js/34.93d14ef6.js"><link rel="prefetch" href="/blog/assets/js/35.9d1649ee.js"><link rel="prefetch" href="/blog/assets/js/36.9bc1f106.js"><link rel="prefetch" href="/blog/assets/js/37.84853c82.js"><link rel="prefetch" href="/blog/assets/js/38.9f600edf.js"><link rel="prefetch" href="/blog/assets/js/39.b47cb433.js"><link rel="prefetch" href="/blog/assets/js/4.ec0140bd.js"><link rel="prefetch" href="/blog/assets/js/40.9ccc0594.js"><link rel="prefetch" href="/blog/assets/js/41.01250879.js"><link rel="prefetch" href="/blog/assets/js/42.d60a39ea.js"><link rel="prefetch" href="/blog/assets/js/43.bb6abe12.js"><link rel="prefetch" href="/blog/assets/js/44.f1827278.js"><link rel="prefetch" href="/blog/assets/js/45.f3339292.js"><link rel="prefetch" href="/blog/assets/js/46.1c304a2b.js"><link rel="prefetch" href="/blog/assets/js/47.431a2b22.js"><link rel="prefetch" href="/blog/assets/js/48.ad234636.js"><link rel="prefetch" href="/blog/assets/js/49.67ad5b83.js"><link rel="prefetch" href="/blog/assets/js/5.3ec83be7.js"><link rel="prefetch" href="/blog/assets/js/50.b0733796.js"><link rel="prefetch" href="/blog/assets/js/51.c86649b3.js"><link rel="prefetch" href="/blog/assets/js/52.e2228f69.js"><link rel="prefetch" href="/blog/assets/js/53.8e49c1f4.js"><link rel="prefetch" href="/blog/assets/js/54.5542fcf9.js"><link rel="prefetch" href="/blog/assets/js/55.bf4d78dd.js"><link rel="prefetch" href="/blog/assets/js/56.ac5dd9d6.js"><link rel="prefetch" href="/blog/assets/js/57.b9a9c4a2.js"><link rel="prefetch" href="/blog/assets/js/58.f8dfabd2.js"><link rel="prefetch" href="/blog/assets/js/59.ef9edf8c.js"><link rel="prefetch" href="/blog/assets/js/6.a48d7718.js"><link rel="prefetch" href="/blog/assets/js/60.6ac72368.js"><link rel="prefetch" href="/blog/assets/js/62.b9fa4071.js"><link rel="prefetch" href="/blog/assets/js/63.ef4370f5.js"><link rel="prefetch" href="/blog/assets/js/64.a436c5be.js"><link rel="prefetch" href="/blog/assets/js/65.fb4bf376.js"><link rel="prefetch" href="/blog/assets/js/66.bad0cffd.js"><link rel="prefetch" href="/blog/assets/js/67.29b8bb71.js"><link rel="prefetch" href="/blog/assets/js/68.b7ae577e.js"><link rel="prefetch" href="/blog/assets/js/69.5a855c9d.js"><link rel="prefetch" href="/blog/assets/js/7.e84e9cdf.js"><link rel="prefetch" href="/blog/assets/js/70.df9ab8df.js"><link rel="prefetch" href="/blog/assets/js/71.9328d7e2.js"><link rel="prefetch" href="/blog/assets/js/72.3580533a.js"><link rel="prefetch" href="/blog/assets/js/73.16ba35eb.js"><link rel="prefetch" href="/blog/assets/js/74.2d0d9b5b.js"><link rel="prefetch" href="/blog/assets/js/75.09e10dbd.js"><link rel="prefetch" href="/blog/assets/js/76.56e0338c.js"><link rel="prefetch" href="/blog/assets/js/77.a99acafc.js"><link rel="prefetch" href="/blog/assets/js/78.17d1d404.js"><link rel="prefetch" href="/blog/assets/js/79.50ed2296.js"><link rel="prefetch" href="/blog/assets/js/8.d6346ba1.js"><link rel="prefetch" href="/blog/assets/js/80.6d76cbea.js"><link rel="prefetch" href="/blog/assets/js/81.7a8a8125.js"><link rel="prefetch" href="/blog/assets/js/82.ab110344.js"><link rel="prefetch" href="/blog/assets/js/83.534159b7.js"><link rel="prefetch" href="/blog/assets/js/84.1cacb036.js"><link rel="prefetch" href="/blog/assets/js/85.6ea1a18c.js"><link rel="prefetch" href="/blog/assets/js/86.45d2d704.js"><link rel="prefetch" href="/blog/assets/js/87.397bf3ec.js"><link rel="prefetch" href="/blog/assets/js/88.a3ac0d51.js"><link rel="prefetch" href="/blog/assets/js/89.181ef1b6.js"><link rel="prefetch" href="/blog/assets/js/9.10eb84ee.js"><link rel="prefetch" href="/blog/assets/js/90.cf532ce7.js"><link rel="prefetch" href="/blog/assets/js/91.6a34527e.js"><link rel="prefetch" href="/blog/assets/js/92.64450dbe.js"><link rel="prefetch" href="/blog/assets/js/93.d99dd7ba.js"><link rel="prefetch" href="/blog/assets/js/94.6300a04e.js"><link rel="prefetch" href="/blog/assets/js/95.74437fc5.js"><link rel="prefetch" href="/blog/assets/js/96.726f109c.js"><link rel="prefetch" href="/blog/assets/js/97.d9b26abd.js"><link rel="prefetch" href="/blog/assets/js/98.7c6a019e.js"><link rel="prefetch" href="/blog/assets/js/99.1e91aa55.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.f40e0164.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">Jack 的博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/blog/vue2/" class="nav-link">
+  vue2
+</a></div><div class="nav-item"><a href="/blog/vue3/" class="nav-link">
+  vue3
+</a></div><div class="nav-item"><a href="/blog/react/" class="nav-link">
+  react
+</a></div><div class="nav-item"><a href="/blog/node/" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/blog/science/" class="nav-link">
+  科学
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="web" class="dropdown-title"><span class="title">web</span> <span class="arrow down"></span></button> <button type="button" aria-label="web" class="mobile-dropdown-title"><span class="title">web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/web/js/" class="nav-link">
+  js
+</a></li><li class="dropdown-item"><!----> <a href="/blog/webpack/" class="nav-link">
+  webpack
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他" class="mobile-dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/others/functional-programming/" class="nav-link">
+  函数式编程
+</a></li><li class="dropdown-item"><!----> <a href="/blog/angular/" class="nav-link">
+  angular
+</a></li><li class="dropdown-item"><!----> <a href="/blog/others/dev-tool/" class="nav-link router-link-active">
+  开发工具
+</a></li><li class="dropdown-item"><!----> <a href="/blog/others/mac/" class="nav-link">
+  mac使用
+</a></li></ul></div></div> <a href="https://github.com/jackchoumine/vue-press-blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/blog/vue2/" class="nav-link">
+  vue2
+</a></div><div class="nav-item"><a href="/blog/vue3/" class="nav-link">
+  vue3
+</a></div><div class="nav-item"><a href="/blog/react/" class="nav-link">
+  react
+</a></div><div class="nav-item"><a href="/blog/node/" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/blog/science/" class="nav-link">
+  科学
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="web" class="dropdown-title"><span class="title">web</span> <span class="arrow down"></span></button> <button type="button" aria-label="web" class="mobile-dropdown-title"><span class="title">web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/web/js/" class="nav-link">
+  js
+</a></li><li class="dropdown-item"><!----> <a href="/blog/webpack/" class="nav-link">
+  webpack
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他" class="mobile-dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/others/functional-programming/" class="nav-link">
+  函数式编程
+</a></li><li class="dropdown-item"><!----> <a href="/blog/angular/" class="nav-link">
+  angular
+</a></li><li class="dropdown-item"><!----> <a href="/blog/others/dev-tool/" class="nav-link router-link-active">
+  开发工具
+</a></li><li class="dropdown-item"><!----> <a href="/blog/others/mac/" class="nav-link">
+  mac使用
+</a></li></ul></div></div> <a href="https://github.com/jackchoumine/vue-press-blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>vscode 配置</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/others/dev-tool/vscode%E9%85%8D%E7%BD%AE.html#全局settings-json" class="sidebar-link">全局settings.json</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/blog/others/dev-tool/vscode%E9%85%8D%E7%BD%AE.html#常用扩展" class="sidebar-link">常用扩展</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vscode-配置"><a href="#vscode-配置" class="header-anchor">#</a> vscode 配置</h1> <p>有些公司限制 vscode 设置同步，故把我的 vscode 设置放在这里，再复制公司电脑上。</p> <h2 id="全局settings-json"><a href="#全局settings-json" class="header-anchor">#</a> 全局<code>settings.json</code></h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token punctuation">{</span>
+  <span class="token comment">// 'Fira Code','JetBrains Mono',</span>
+  <span class="token string-property property">&quot;editor.fontFamily&quot;</span><span class="token operator">:</span> <span class="token string">&quot;'Fira Code','JetBrains Mono',Menlo, Consolas, 'Courier New', monospace&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;editor.fontLigatures&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;editor.fontSize&quot;</span><span class="token operator">:</span> <span class="token number">18</span><span class="token punctuation">,</span>
+  <span class="token comment">//一个制表符等于的空格数。该设置在`editor.detectIndentation`</span>
+  <span class="token string-property property">&quot;editor.tabSize&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;editor.detectIndentation&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;editor.fontWeight&quot;</span><span class="token operator">:</span> <span class="token string">&quot;400&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;editor.multiCursorModifier&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ctrlCmd&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;editor.matchBrackets&quot;</span><span class="token operator">:</span> <span class="token string">&quot;always&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;editor.highlightActiveIndentGuide&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token comment">// 视区宽度内自动换行</span>
+  <span class="token string-property property">&quot;editor.wordWrap&quot;</span><span class="token operator">:</span> <span class="token string">&quot;on&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;editor.tabCompletion&quot;</span><span class="token operator">:</span> <span class="token string">&quot;on&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 推荐值 tab 自动完成</span>
+  <span class="token comment">// 代码建议补全</span>
+  <span class="token string-property property">&quot;editor.suggestSelection&quot;</span><span class="token operator">:</span> <span class="token string">&quot;recentlyUsedByPrefix&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;editor.linkedEditing&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 修改html标签联动编辑</span>
+  <span class="token comment">// 在一定数量的等宽字符后显示垂直标尺。输入多个值，显示多个标尺。若数组为空，则不绘制标尺</span>
+  <span class="token comment">// 前端项目似乎不需要</span>
+  <span class="token string-property property">&quot;editor.rulers&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token comment">// 特定语言设置垂直标尺</span>
+  <span class="token string-property property">&quot;[python]&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;editor.rulers&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">79</span><span class="token punctuation">,</span> <span class="token number">120</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// vscode 默认启用了根据文件类型自动设置tabSize的选项</span>
+  <span class="token comment">// &quot;editor.detectIndentation&quot;: false,</span>
+  <span class="token string-property property">&quot;editor.renderIndentGuides&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;editor.renderControlCharacters&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;editor.copyWithSyntaxHighlighting&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;editor.formatOnPaste&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 粘贴时格式化</span>
+  <span class="token comment">// 智能提示配置</span>
+  <span class="token string-property property">&quot;editor.quickSuggestions&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;other&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;comments&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;strings&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// 每次保存的时候自动格式化</span>
+  <span class="token comment">// NOTE 不开启，否则 eslint 的 vue/max-attributes-per-line 和 prettier 冲突</span>
+  <span class="token string-property property">&quot;editor.formatOnSave&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;editor.formatOnType&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token comment">// # 每次保存的时候将代码按 eslint 格式进行修复</span>
+  <span class="token string-property property">&quot;editor.codeActionsOnSave&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 保存时的行为</span>
+    <span class="token string-property property">&quot;source.fixAll&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;source.organizeImports&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;source.fixAll.eslint&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;source.fixAll.tslint&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// 自动保存时延</span>
+  <span class="token string-property property">&quot;files.autoSave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;afterDelay&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;files.autoSaveDelay&quot;</span><span class="token operator">:</span> <span class="token number">1000</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;files.associations&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;*.vue&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vue&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;*.html&quot;</span><span class="token operator">:</span> <span class="token string">&quot;html&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;explorer.confirmDelete&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token comment">// 垂直标尺的颜色设置</span>
+  <span class="token string-property property">&quot;workbench.colorCustomizations&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;editorRuler.foreground&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#ff4081&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;vsicons.dontShowNewVersionMessage&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;workbench.iconTheme&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vscode-icons&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;git.ignoreMissingGitWarning&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;git.autofetch&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;git.confirmSync&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;git.enableSmartCommit&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;gitlens.advanced.messages&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;suppressLineUncommittedWarning&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// 终端设置</span>
+  <span class="token comment">// window 命令行</span>
+  <span class="token string-property property">&quot;terminal.integrated.profiles.windows&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;PowerShell -NoProfile&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string-property property">&quot;source&quot;</span><span class="token operator">:</span> <span class="token string">&quot;PowerShell&quot;</span><span class="token punctuation">,</span>
+      <span class="token string-property property">&quot;args&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;-NoProfile&quot;</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;terminal.integrated.fontSize&quot;</span><span class="token operator">:</span> <span class="token number">14</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;terminal.integrated.profiles.osx&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;zsh (x86-64)&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string-property property">&quot;path&quot;</span><span class="token operator">:</span> <span class="token string">&quot;arch&quot;</span><span class="token punctuation">,</span>
+      <span class="token string-property property">&quot;args&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;-x86_64&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;/bin/zsh&quot;</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// &quot;/bin/zsh&quot;,</span>
+  <span class="token string-property property">&quot;terminal.explorerKind&quot;</span><span class="token operator">:</span> <span class="token string">&quot;external&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;terminal.external.osxExec&quot;</span><span class="token operator">:</span> <span class="token string">&quot;iTerm.app&quot;</span><span class="token punctuation">,</span> <span class="token comment">// mac 外部终端</span>
+  <span class="token string-property property">&quot;terminal.integrated.automationShell.osx&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/bin/zsh&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;terminal.integrated.copyOnSelection&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;terminal.integrated.rightClickBehavior&quot;</span><span class="token operator">:</span> <span class="token string">&quot;paste&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;terminal.integrated.cursorStyle&quot;</span><span class="token operator">:</span> <span class="token string">&quot;line&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;terminal.integrated.cursorBlinking&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// 默认编码</span>
+  <span class="token string-property property">&quot;files.defaultLanguage&quot;</span><span class="token operator">:</span> <span class="token string">&quot;utf8&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">//文件自动编码</span>
+  <span class="token string-property property">&quot;files.autoGuessEncoding&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token comment">// 这些文件将不会显示在工作空间中</span>
+  <span class="token string-property property">&quot;files.exclude&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;**/.classpath&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;**/*.class&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;**/.project&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;**/.&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;**/.settings&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;**/.factorypath&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;**/.git&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;**/.svn&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;**/.hg&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;**/CVS&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;**/.DS_Store&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;**/*.js&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string-property property">&quot;when&quot;</span><span class="token operator">:</span> <span class="token string">&quot;$(basename).ts&quot;</span> <span class="token comment">//ts编译后生成的js文件将不会显示在工作空中</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;**/node_modules&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// 在使用搜索功能时，将这些文件夹/文件排除在外</span>
+  <span class="token string-property property">&quot;search.exclude&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;**/node_modules&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;**/bower_components&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;**/target&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;**/logs&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;**/dist&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;highlightLine.borderStyle&quot;</span><span class="token operator">:</span> <span class="token string">&quot;solid&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;highlightLine.borderWidth&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1px&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;highlightLine.borderColor&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#C9ABA5&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">// colorize 扩展设置</span>
+  <span class="token string-property property">&quot;colorize.languages&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;javascript&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;javascriptreact&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;typescript&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;vue&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;scss&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;less&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;css&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token comment">/* 文件说明注释  */</span>
+  <span class="token string-property property">&quot;fileheader.customMade&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;Description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">// &quot;Hash&quot;: &quot;不是路由组件&quot;,</span>
+    <span class="token string-property property">&quot;Date&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Do not edit&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;Author&quot;</span><span class="token operator">:</span> <span class="token string">&quot;JackChou&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;LastEditTime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Do not edit&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;LastEditors&quot;</span><span class="token operator">:</span> <span class="token string">&quot;JackChou&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;fileheader.cursorMode&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;param&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">// &quot;return&quot;: &quot;&quot;,</span>
+    <span class="token string-property property">&quot;Author&quot;</span><span class="token operator">:</span> <span class="token string">&quot;JackChou&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;fileheader.configObj&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;autoAdd&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;wideSame&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 等宽</span>
+    <span class="token string-property property">&quot;wideNum&quot;</span><span class="token operator">:</span> <span class="token number">12</span><span class="token punctuation">,</span> <span class="token comment">// 字段长度 默认为13</span>
+    <span class="token string-property property">&quot;CheckFileChange&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">//  只有文件头改变，回滚到最新版</span>
+    <span class="token comment">// &quot;autoAddLine&quot;: 100,</span>
+    <span class="token string-property property">&quot;prohibitAutoAdd&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;json&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;md&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;less&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">//  禁止.json .md 文件，自动添加头部注释</span>
+    <span class="token string-property property">&quot;dateFormat&quot;</span><span class="token operator">:</span> <span class="token string">&quot;YYYY-MM-DD HH:mm:ss ZZ&quot;</span> <span class="token comment">// 日期格式 输出：2019-05-20 15:42:07 +0800</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">/* todo-tree settings */</span>
+  <span class="token comment">// &quot;todo-tree.regex.regex&quot;: &quot;((//|#|&lt;!--|;|/\\*|^)\\s*($TAGS):|^\\s*- \\[ \\])&quot;, // 在文件中匹配 tag 的正则</span>
+  <span class="token comment">// &quot;todo-tree.regex.regexCaseSensitive&quot;: false,//tag  是否大小写敏感</span>
+  <span class="token string-property property">&quot;todo-tree.regex.regex&quot;</span><span class="token operator">:</span> <span class="token string">&quot;(//|#|&lt;!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;todo-tree.general.tags&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;TODO&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;FIXME&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;BUG&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;NOTE&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;DEL&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;todo-tree.highlights.defaultHighlight&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 默认 tag 设置</span>
+    <span class="token string-property property">&quot;background&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#f9f9fb&quot;</span><span class="token punctuation">,</span> <span class="token comment">//&quot;peekViewResult.background&quot;, // 使用 // &quot;yellow&quot;, // 标记的背景色</span>
+    <span class="token string-property property">&quot;foreground&quot;</span><span class="token operator">:</span> <span class="token string">&quot;yellow&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 标记前景色 (文字颜色)</span>
+    <span class="token string-property property">&quot;icon&quot;</span><span class="token operator">:</span> <span class="token string">&quot;check&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 使用的图标</span>
+    <span class="token string-property property">&quot;rulerColour&quot;</span><span class="token operator">:</span> <span class="token string">&quot;yellow&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 在右侧快速预览的颜色</span>
+    <span class="token string-property property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tag&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 在文件中如何高亮  tag：只高亮标签  text：标签和后面的文字  tag-and-comment：高亮注释和标签  text-and-comment：标签 文字和注释  line：标记的一行  whole-line：</span>
+    <span class="token string-property property">&quot;iconColour&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#fff&quot;</span> <span class="token comment">// 左侧 todo tree  图标的颜色，没有设置，使用前景色</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;todo-tree.highlights.customHighlight&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;BUG&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string-property property">&quot;background&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#D01F00&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 红色</span>
+      <span class="token string-property property">&quot;foreground&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#f9f9fb&quot;</span><span class="token punctuation">,</span>
+      <span class="token string-property property">&quot;icon&quot;</span><span class="token operator">:</span> <span class="token string">&quot;bug&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 显示的 icon</span>
+      <span class="token string-property property">&quot;rulerColor&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#D01F00&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 预览表标尺的颜色</span>
+      <span class="token string-property property">&quot;iconColour&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#D01F00&quot;</span><span class="token punctuation">,</span> <span class="token comment">// todo  树中图标颜色</span>
+      <span class="token string-property property">&quot;gutterIcon&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token comment">// 是否在行号旁显示图标</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;TODO&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string-property property">&quot;background&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#3399CC&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 蓝色</span>
+      <span class="token string-property property">&quot;foreground&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#f9f9fb&quot;</span><span class="token punctuation">,</span>
+      <span class="token string-property property">&quot;iconColour&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#3399CC&quot;</span><span class="token punctuation">,</span>
+      <span class="token string-property property">&quot;icon&quot;</span><span class="token operator">:</span> <span class="token string">&quot;checklist&quot;</span><span class="token punctuation">,</span>
+      <span class="token string-property property">&quot;rulerLane&quot;</span><span class="token operator">:</span> <span class="token string">&quot;full&quot;</span><span class="token punctuation">,</span>
+      <span class="token string-property property">&quot;gutterIcon&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;FIXME&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string-property property">&quot;background&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#FF9900&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 黄色</span>
+      <span class="token string-property property">&quot;foreground&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#f9f9fb&quot;</span><span class="token punctuation">,</span>
+      <span class="token string-property property">&quot;iconColour&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#FF9900&quot;</span><span class="token punctuation">,</span>
+      <span class="token string-property property">&quot;icon&quot;</span><span class="token operator">:</span> <span class="token string">&quot;alert&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 警告</span>
+      <span class="token string-property property">&quot;gutterIcon&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token string-property property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;text&quot;</span> <span class="token comment">// 有文字部分（代码、tab、text）, 后面的空白部分不高亮</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;NOTE&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string-property property">&quot;background&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#f9f9fb&quot;</span><span class="token punctuation">,</span>
+      <span class="token string-property property">&quot;foreground&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#000&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 黑色</span>
+      <span class="token string-property property">&quot;icon&quot;</span><span class="token operator">:</span> <span class="token string">&quot;note&quot;</span><span class="token punctuation">,</span>
+      <span class="token comment">// &quot;type&quot;: &quot;whole-line&quot;, // 整行高亮</span>
+      <span class="token string-property property">&quot;rulerColour&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#D1BC15&quot;</span><span class="token punctuation">,</span>
+      <span class="token string-property property">&quot;iconColour &quot;</span><span class="token operator">:</span> <span class="token string">&quot;white&quot;</span><span class="token punctuation">,</span>
+      <span class="token string-property property">&quot;hideFromTree&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token comment">// 在  todo  树中隐藏</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;DEL&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string-property property">&quot;background&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#FFC300&quot;</span><span class="token punctuation">,</span>
+      <span class="token string-property property">&quot;foreground&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#000&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 黑色</span>
+      <span class="token string-property property">&quot;icon&quot;</span><span class="token operator">:</span> <span class="token string">&quot;eye&quot;</span><span class="token punctuation">,</span>
+      <span class="token comment">// &quot;type&quot;: &quot;whole-line&quot;, // 整行高亮</span>
+      <span class="token string-property property">&quot;rulerColour&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#D1BC15&quot;</span><span class="token punctuation">,</span>
+      <span class="token string-property property">&quot;iconColour &quot;</span><span class="token operator">:</span> <span class="token string">&quot;white&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;todo-tree.tree.scanAtStartup&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;todo-tree.general.statusBar&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tags&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 状态栏显示样式</span>
+  <span class="token string-property property">&quot;emmet.showSuggestionsAsSnippets&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;emmet.triggerExpansionOnTab&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;emmet.includeLanguages&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;javascript&quot;</span><span class="token operator">:</span> <span class="token string">&quot;javascriptreact&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;typescript&quot;</span><span class="token operator">:</span> <span class="token string">&quot;typescriptreact&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// 默认格式化设置</span>
+  <span class="token string-property property">&quot;[javascript]&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;editor.defaultFormatter&quot;</span><span class="token operator">:</span> <span class="token string">&quot;esbenp.prettier-vscode&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;editor.formatOnSave&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;editor.formatOnPaste&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;[typescript]&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// &quot;editor.defaultFormatter&quot;: &quot;vscode.typescript-language-features&quot; // 编辑器内置的格式化功能</span>
+    <span class="token string-property property">&quot;editor.defaultFormatter&quot;</span><span class="token operator">:</span> <span class="token string">&quot;esbenp.prettier-vscode&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;editor.formatOnSave&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;editor.formatOnPaste&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token string-property property">&quot;typescript.format.enable&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;typescript.preferences.quoteStyle&quot;</span><span class="token operator">:</span> <span class="token string">&quot;single&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">// 模块变化后自动更新 import</span>
+  <span class="token string-property property">&quot;typescript.updateImportsOnFileMove.enabled&quot;</span><span class="token operator">:</span> <span class="token string">&quot;always&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;javascript.format.enable&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;javascript.updateImportsOnFileMove.enabled&quot;</span><span class="token operator">:</span> <span class="token string">&quot;always&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;javascript.preferences.quoteStyle&quot;</span><span class="token operator">:</span> <span class="token string">&quot;single&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;javascript.format.semicolons&quot;</span><span class="token operator">:</span> <span class="token string">&quot;remove&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;[typescriptreact]&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;editor.defaultFormatter&quot;</span><span class="token operator">:</span> <span class="token string">&quot;esbenp.prettier-vscode&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;[less]&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;editor.defaultFormatter&quot;</span><span class="token operator">:</span> <span class="token string">&quot;esbenp.prettier-vscode&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;[html]&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;editor.defaultFormatter&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vscode.html-language-features&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;editor.linkedEditing&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;[css]&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;editor.defaultFormatter&quot;</span><span class="token operator">:</span> <span class="token string">&quot;esbenp.prettier-vscode&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;[json]&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;editor.defaultFormatter&quot;</span><span class="token operator">:</span> <span class="token string">&quot;esbenp.prettier-vscode&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;[jsonc]&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;editor.defaultFormatter&quot;</span><span class="token operator">:</span> <span class="token string">&quot;esbenp.prettier-vscode&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;[markdown]&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;editor.formatOnSave&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;editor.wordWrap&quot;</span><span class="token operator">:</span> <span class="token string">&quot;on&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;editor.defaultFormatter&quot;</span><span class="token operator">:</span> <span class="token string">&quot;esbenp.prettier-vscode&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">// 快速补全</span>
+    <span class="token string-property property">&quot;editor.quickSuggestions&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string-property property">&quot;other&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token string-property property">&quot;comments&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token string-property property">&quot;strings&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// 显示空格</span>
+    <span class="token string-property property">&quot;editor.renderWhitespace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;boundary&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">// snippet 提示优先（看个人喜欢）</span>
+    <span class="token string-property property">&quot;editor.snippetSuggestions&quot;</span><span class="token operator">:</span> <span class="token string">&quot;top&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;editor.tabCompletion&quot;</span><span class="token operator">:</span> <span class="token string">&quot;on&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">// 使用 enter 接受提示</span>
+    <span class="token string-property property">&quot;editor.acceptSuggestionOnEnter&quot;</span><span class="token operator">:</span> <span class="token string">&quot;on&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;[scss]&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;editor.defaultFormatter&quot;</span><span class="token operator">:</span> <span class="token string">&quot;esbenp.prettier-vscode&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;[vue]&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;editor.defaultFormatter&quot;</span><span class="token operator">:</span> <span class="token string">&quot;esbenp.prettier-vscode&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;editor.linkedEditing&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token comment">// 不生效，安装 auto rename tag 代替</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;[jsx]&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;editor.linkedEditing&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token comment">// 不生效，安装 auto rename tag 代替</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// 添加 vue 支持</span>
+  <span class="token string-property property">&quot;eslint.validate&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;javascript&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;javascriptreact&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;typescript&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;typescriptreact&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;reacttypescript&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;reactjavascript&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;html&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;vue&quot;</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;eslint.migration.2_x&quot;</span><span class="token operator">:</span> <span class="token string">&quot;on&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;eslint.alwaysShowStatus&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;eslint.format.enable&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token comment">// prettier 设置</span>
+  <span class="token string-property property">&quot;prettier.useEditorConfig&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;prettier.singleQuote&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;prettier.jsxSingleQuote&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;prettier.embeddedLanguageFormatting&quot;</span><span class="token operator">:</span> <span class="token string">&quot;auto&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;prettier.printWidth&quot;</span><span class="token operator">:</span> <span class="token number">120</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;prettier.semi&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;prettier.arrowParens&quot;</span><span class="token operator">:</span> <span class="token string">&quot;avoid&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;prettier.proseWrap&quot;</span><span class="token operator">:</span> <span class="token string">&quot;always&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;vetur.format.defaultFormatter.js&quot;</span><span class="token operator">:</span> <span class="token string">&quot;prettier&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;vetur.format.defaultFormatter.ts&quot;</span><span class="token operator">:</span> <span class="token string">&quot;prettier&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;vetur.format.scriptInitialIndent&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;vetur.format.defaultFormatterOptions&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;js-beautify-html&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token comment">// &quot;wrap_attributes&quot;: &quot;auto&quot;, // &quot;force-aligned&quot;,</span>
+      <span class="token comment">// &quot;wrap_attributes&quot;: &quot;auto&quot;, // 在超出行长度时才对属性进行换行</span>
+      <span class="token comment">// &quot;wrap_attributes&quot;: &quot;force&quot;, // 对除第一个属性外的其他每个属性进行换行</span>
+      <span class="token comment">// &quot;wrap_attributes&quot;: &quot;force-aligned&quot;, // 第一个以外的属性换行对齐</span>
+      <span class="token string-property property">&quot;wrap_attributes&quot;</span><span class="token operator">:</span> <span class="token string">&quot;force-expand-multiline&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 所有属性强制换行对齐</span>
+      <span class="token comment">// &quot;wrap_attributes&quot;: &quot;force-multiline&quot; // 超出规定长度，换行对齐</span>
+      <span class="token comment">// #vue 组件中html代码格式化样式</span>
+      <span class="token string-property property">&quot;wrap_line_length&quot;</span><span class="token operator">:</span> <span class="token number">120</span><span class="token punctuation">,</span>
+      <span class="token string-property property">&quot;end_with_newline&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;prettier&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string-property property">&quot;singleQuote&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token string-property property">&quot;semi&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token string-property property">&quot;arrowParens&quot;</span><span class="token operator">:</span> <span class="token string">&quot;avoid&quot;</span><span class="token punctuation">,</span>
+      <span class="token string-property property">&quot;html-whitespace-sensitivity&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ignore&quot;</span><span class="token punctuation">,</span>
+      <span class="token string-property property">&quot;printWidth&quot;</span><span class="token operator">:</span> <span class="token number">120</span><span class="token punctuation">,</span> <span class="token comment">// 超过最大值换行</span>
+      <span class="token string-property property">&quot;tabWidth&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment">// 缩进字节数</span>
+      <span class="token string-property property">&quot;useTabs&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 缩进不使用tab，使用空格</span>
+      <span class="token string-property property">&quot;proseWrap&quot;</span><span class="token operator">:</span> <span class="token string">&quot;preserve&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 默认值。因为使用了一些折行敏感型的渲染器（如GitHub comment）而按照markdown文本样式进行折行</span>
+      <span class="token comment">// &quot;bracketSpacing&quot;: true, // 在对象，数组括号与文字之间加空格 &quot;{ foo: bar }&quot;</span>
+      <span class="token comment">// &quot;disableLanguages&quot;: [</span>
+      <span class="token comment">//   &quot;vue&quot;</span>
+      <span class="token comment">// ], // 不格式化vue文件，vue文件的格式化单独设置</span>
+      <span class="token string-property property">&quot;endOfLine&quot;</span><span class="token operator">:</span> <span class="token string">&quot;auto&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 结尾是 \n \r \n\r auto</span>
+      <span class="token string-property property">&quot;eslintIntegration&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">//不让prettier使用eslint的代码格式进行校验</span>
+      <span class="token string-property property">&quot;htmlWhitespaceSensitivity&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ignore&quot;</span><span class="token punctuation">,</span>
+      <span class="token string-property property">&quot;ignorePath&quot;</span><span class="token operator">:</span> <span class="token string">&quot;.prettierignore&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 不使用prettier格式化的文件填写在项目的.prettierignore文件中</span>
+      <span class="token comment">// &quot;jsxBracketSameLine&quot;: false, // 在jsx中把'&gt;' 是否单独放一行</span>
+      <span class="token string-property property">&quot;jsxSingleQuote&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 在jsx中使用单引号代替双引号</span>
+      <span class="token string-property property">&quot;parser&quot;</span><span class="token operator">:</span> <span class="token string">&quot;babylon&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 格式化的解析器，默认是babylon</span>
+      <span class="token string-property property">&quot;requireConfig&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// Require a 'prettierconfig' to format prettier</span>
+      <span class="token string-property property">&quot;stylelintIntegration&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">//不让prettier使用stylelint的代码格式进行校验</span>
+      <span class="token string-property property">&quot;trailingComma&quot;</span><span class="token operator">:</span> <span class="token string">&quot;es5&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 在对象或数组最后一个元素后面是否加逗号（在ES5中加尾逗号）</span>
+      <span class="token string-property property">&quot;tslintIntegration&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token comment">// 不让prettier使用tslint的代码格式进行校验</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// jest 配置</span>
+  <span class="token string-property property">&quot;jest.autoRun&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;watch&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">// &quot;onStartup&quot;: [</span>
+    <span class="token comment">//   &quot;all-tests&quot;</span>
+    <span class="token comment">// ]</span>
+    <span class="token string-property property">&quot;onSave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;test-only&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;jestrunner.jestCommand&quot;</span><span class="token operator">:</span> <span class="token string">&quot;npm run unit&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;code-runner.executorMap&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;scheme&quot;</span><span class="token operator">:</span> <span class="token string">&quot;chez --script&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// 格式化stylus, 需安装 Manta's Stylus Supremacy 插件</span>
+  <span class="token string-property property">&quot;stylusSupremacy.insertColons&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 是否插入冒号</span>
+  <span class="token string-property property">&quot;stylusSupremacy.insertSemicolons&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 是否插入分好</span>
+  <span class="token string-property property">&quot;stylusSupremacy.insertBraces&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 是否插入大括号</span>
+  <span class="token string-property property">&quot;stylusSupremacy.insertNewLineAroundImports&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// import之后是否换行</span>
+  <span class="token string-property property">&quot;stylusSupremacy.insertNewLineAroundBlocks&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;pxremUnit&quot;</span><span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;cssrem.rootFontSize&quot;</span><span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;copyOnSelect.trimStart&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;vue-helper.quotes&quot;</span><span class="token operator">:</span> <span class="token string">&quot;single&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;scssFormatter.singleQuote&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;autoimport.useSemiColon&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;diffEditor.ignoreTrimWhitespace&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;tabnine.experimentalAutoImports&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;screencastMode.fontSize&quot;</span><span class="token operator">:</span> <span class="token number">60</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;liveServer.settings.NoBrowser&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;liveServer.settings.CustomBrowser&quot;</span><span class="token operator">:</span> <span class="token string">&quot;chrome&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;extensions.autoCheckUpdates&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;extensions.autoUpdate&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;update.mode&quot;</span><span class="token operator">:</span> <span class="token string">&quot;none&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;liveServer.settings.donotShowInfoMsg&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;[dart]&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;editor.formatOnSave&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;editor.formatOnType&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;editor.rulers&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">80</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;editor.selectionHighlight&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;editor.suggest.snippetsPreventQuickSuggestions&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;editor.suggestSelection&quot;</span><span class="token operator">:</span> <span class="token string">&quot;first&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;editor.tabCompletion&quot;</span><span class="token operator">:</span> <span class="token string">&quot;onlySnippets&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;editor.wordBasedSuggestions&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;dart.openDevTools&quot;</span><span class="token operator">:</span> <span class="token string">&quot;flutter&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;[javascriptreact]&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;editor.defaultFormatter&quot;</span><span class="token operator">:</span> <span class="token string">&quot;esbenp.prettier-vscode&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;search.followSymlinks&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;dart.checkForSdkUpdates&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;dart.allowAnalytics&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;task.problemMatchers.neverPrompt&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;shell&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;security.workspace.trust.untrustedFiles&quot;</span><span class="token operator">:</span> <span class="token string">&quot;open&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;code-runner.defaultLanguage&quot;</span><span class="token operator">:</span> <span class="token string">&quot;typescripts&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;java.configuration.maven.userSettings&quot;</span><span class="token operator">:</span> <span class="token string">&quot;D:\\0maven\\apache-maven-3.5.2\\conf\\settings.xml&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">//Java 环境配置 end</span>
+  <span class="token string-property property">&quot;java.jdt.ls.vmargs&quot;</span><span class="token operator">:</span> <span class="token string">&quot;-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication -javaagent:\&quot;C:\\Users\\Administrator\\.vscode\\extensions\\gabrielbb.vscode-lombok-0.9.7/server/lombok.jar\&quot; -Xbootclasspath/a:\&quot;C:\\Users\\Administrator\\.vscode\\extensions\\gabrielbb.vscode-lombok-0.9.7/server/lombok.jar\&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;[java]&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;editor.defaultFormatter&quot;</span><span class="token operator">:</span> <span class="token string">&quot;mwpb.java-prettier-formatter&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">/* code spell checker */</span>
+  <span class="token string-property property">&quot;cSpell.enableFiletypes&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;.vue&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;.ts&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;.js&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;cSpell.userWords&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;Backtop&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;Clilent&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;DONOTE&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;Deduplication&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;Editcolumns&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;Liskov&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;NOAUTH&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;Sider&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;Submenu&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;Tinymce&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;Unmount&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;Whitespaces&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;Xbootclasspath&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;Zilles&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;adoptopenjdk&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;antd&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;autofetch&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;brightfuture&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;browserslist&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;cakebrew&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;chunkhash&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;classpath&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;codelyzer&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;codemirror&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;commitlint&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;console.log&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;craco&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;cssrem&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;devkit&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;devtool&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;docstrings&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;dont&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;drawio&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;echarts&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;eofline&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;eqeqeq&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;eslintt&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;factorialize&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;factorypath&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;fileheader&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;fira&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;foler&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;forin&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;gabrielbb&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;ghpages&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;gitee&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;gitlab&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;hackernews&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;hediet&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;iconify&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;jackchou&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;jackchoumine&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;jackzhoumine&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;jasminewd&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;javaagent&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;jszip&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;launchrocket&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;lightgreen&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;maxlength&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;michelemelluso&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;multiline&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;nodesource&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;nospace&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;noverify&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;npmignore&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;nprogress&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;onespace&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;openjdk&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;paren&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;pbpaste&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;plog&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;plusplus&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;portfinder&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;precache&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;prettierconfig&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;prettierignore&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;publickey&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;pxrem&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;qrcode&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;simplemde&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;singleline&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;stylefmt&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;stylelint&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;sweetalert&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;tasksfile&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;todohighlight&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;trcc&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;typeof&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;untap&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;vetur&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;vite&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;vitejs&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;vmargs&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;vnode&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;vsicons&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;vsintellicode&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;vuedx&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;vueuse&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;vuex&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;webpack's&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;zhou&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;zmformtable&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;zmformtableset&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;zmgitlab&quot;</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;hediet.vscode-drawio.local-storage&quot;</span><span class="token operator">:</span> <span class="token string">&quot;eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWw7YmFzaWNcIixcImN1c3RvbUxpYnJhcmllc1wiOltcIkwuc2NyYXRjaHBhZFwiXSxcInBsdWdpbnNcIjpbXSxcInJlY2VudENvbG9yc1wiOltcIjk5MDAwMFwiLFwiQ0MwMDAwXCIsXCIwMDAwMDBcIixcIkZGRkZGRlwiLFwiMUExQTFBXCJdLFwiZm9ybWF0V2lkdGhcIjpcIjI0MFwiLFwiY3JlYXRlVGFyZ2V0XCI6ZmFsc2UsXCJwYWdlRm9ybWF0XCI6e1wieFwiOjAsXCJ5XCI6MCxcIndpZHRoXCI6ODI3LFwiaGVpZ2h0XCI6MTE2OX0sXCJzZWFyY2hcIjp0cnVlLFwic2hvd1N0YXJ0U2NyZWVuXCI6dHJ1ZSxcImdyaWRDb2xvclwiOlwiI2QwZDBkMFwiLFwiZGFya0dyaWRDb2xvclwiOlwiIzZlNmU2ZVwiLFwiYXV0b3NhdmVcIjp0cnVlLFwicmVzaXplSW1hZ2VzXCI6bnVsbCxcIm9wZW5Db3VudGVyXCI6MCxcInZlcnNpb25cIjoxOCxcInVuaXRcIjoxLFwiaXNSdWxlck9uXCI6ZmFsc2UsXCJ1aVwiOlwiXCJ9In0=&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br><span class="line-number">168</span><br><span class="line-number">169</span><br><span class="line-number">170</span><br><span class="line-number">171</span><br><span class="line-number">172</span><br><span class="line-number">173</span><br><span class="line-number">174</span><br><span class="line-number">175</span><br><span class="line-number">176</span><br><span class="line-number">177</span><br><span class="line-number">178</span><br><span class="line-number">179</span><br><span class="line-number">180</span><br><span class="line-number">181</span><br><span class="line-number">182</span><br><span class="line-number">183</span><br><span class="line-number">184</span><br><span class="line-number">185</span><br><span class="line-number">186</span><br><span class="line-number">187</span><br><span class="line-number">188</span><br><span class="line-number">189</span><br><span class="line-number">190</span><br><span class="line-number">191</span><br><span class="line-number">192</span><br><span class="line-number">193</span><br><span class="line-number">194</span><br><span class="line-number">195</span><br><span class="line-number">196</span><br><span class="line-number">197</span><br><span class="line-number">198</span><br><span class="line-number">199</span><br><span class="line-number">200</span><br><span class="line-number">201</span><br><span class="line-number">202</span><br><span class="line-number">203</span><br><span class="line-number">204</span><br><span class="line-number">205</span><br><span class="line-number">206</span><br><span class="line-number">207</span><br><span class="line-number">208</span><br><span class="line-number">209</span><br><span class="line-number">210</span><br><span class="line-number">211</span><br><span class="line-number">212</span><br><span class="line-number">213</span><br><span class="line-number">214</span><br><span class="line-number">215</span><br><span class="line-number">216</span><br><span class="line-number">217</span><br><span class="line-number">218</span><br><span class="line-number">219</span><br><span class="line-number">220</span><br><span class="line-number">221</span><br><span class="line-number">222</span><br><span class="line-number">223</span><br><span class="line-number">224</span><br><span class="line-number">225</span><br><span class="line-number">226</span><br><span class="line-number">227</span><br><span class="line-number">228</span><br><span class="line-number">229</span><br><span class="line-number">230</span><br><span class="line-number">231</span><br><span class="line-number">232</span><br><span class="line-number">233</span><br><span class="line-number">234</span><br><span class="line-number">235</span><br><span class="line-number">236</span><br><span class="line-number">237</span><br><span class="line-number">238</span><br><span class="line-number">239</span><br><span class="line-number">240</span><br><span class="line-number">241</span><br><span class="line-number">242</span><br><span class="line-number">243</span><br><span class="line-number">244</span><br><span class="line-number">245</span><br><span class="line-number">246</span><br><span class="line-number">247</span><br><span class="line-number">248</span><br><span class="line-number">249</span><br><span class="line-number">250</span><br><span class="line-number">251</span><br><span class="line-number">252</span><br><span class="line-number">253</span><br><span class="line-number">254</span><br><span class="line-number">255</span><br><span class="line-number">256</span><br><span class="line-number">257</span><br><span class="line-number">258</span><br><span class="line-number">259</span><br><span class="line-number">260</span><br><span class="line-number">261</span><br><span class="line-number">262</span><br><span class="line-number">263</span><br><span class="line-number">264</span><br><span class="line-number">265</span><br><span class="line-number">266</span><br><span class="line-number">267</span><br><span class="line-number">268</span><br><span class="line-number">269</span><br><span class="line-number">270</span><br><span class="line-number">271</span><br><span class="line-number">272</span><br><span class="line-number">273</span><br><span class="line-number">274</span><br><span class="line-number">275</span><br><span class="line-number">276</span><br><span class="line-number">277</span><br><span class="line-number">278</span><br><span class="line-number">279</span><br><span class="line-number">280</span><br><span class="line-number">281</span><br><span class="line-number">282</span><br><span class="line-number">283</span><br><span class="line-number">284</span><br><span class="line-number">285</span><br><span class="line-number">286</span><br><span class="line-number">287</span><br><span class="line-number">288</span><br><span class="line-number">289</span><br><span class="line-number">290</span><br><span class="line-number">291</span><br><span class="line-number">292</span><br><span class="line-number">293</span><br><span class="line-number">294</span><br><span class="line-number">295</span><br><span class="line-number">296</span><br><span class="line-number">297</span><br><span class="line-number">298</span><br><span class="line-number">299</span><br><span class="line-number">300</span><br><span class="line-number">301</span><br><span class="line-number">302</span><br><span class="line-number">303</span><br><span class="line-number">304</span><br><span class="line-number">305</span><br><span class="line-number">306</span><br><span class="line-number">307</span><br><span class="line-number">308</span><br><span class="line-number">309</span><br><span class="line-number">310</span><br><span class="line-number">311</span><br><span class="line-number">312</span><br><span class="line-number">313</span><br><span class="line-number">314</span><br><span class="line-number">315</span><br><span class="line-number">316</span><br><span class="line-number">317</span><br><span class="line-number">318</span><br><span class="line-number">319</span><br><span class="line-number">320</span><br><span class="line-number">321</span><br><span class="line-number">322</span><br><span class="line-number">323</span><br><span class="line-number">324</span><br><span class="line-number">325</span><br><span class="line-number">326</span><br><span class="line-number">327</span><br><span class="line-number">328</span><br><span class="line-number">329</span><br><span class="line-number">330</span><br><span class="line-number">331</span><br><span class="line-number">332</span><br><span class="line-number">333</span><br><span class="line-number">334</span><br><span class="line-number">335</span><br><span class="line-number">336</span><br><span class="line-number">337</span><br><span class="line-number">338</span><br><span class="line-number">339</span><br><span class="line-number">340</span><br><span class="line-number">341</span><br><span class="line-number">342</span><br><span class="line-number">343</span><br><span class="line-number">344</span><br><span class="line-number">345</span><br><span class="line-number">346</span><br><span class="line-number">347</span><br><span class="line-number">348</span><br><span class="line-number">349</span><br><span class="line-number">350</span><br><span class="line-number">351</span><br><span class="line-number">352</span><br><span class="line-number">353</span><br><span class="line-number">354</span><br><span class="line-number">355</span><br><span class="line-number">356</span><br><span class="line-number">357</span><br><span class="line-number">358</span><br><span class="line-number">359</span><br><span class="line-number">360</span><br><span class="line-number">361</span><br><span class="line-number">362</span><br><span class="line-number">363</span><br><span class="line-number">364</span><br><span class="line-number">365</span><br><span class="line-number">366</span><br><span class="line-number">367</span><br><span class="line-number">368</span><br><span class="line-number">369</span><br><span class="line-number">370</span><br><span class="line-number">371</span><br><span class="line-number">372</span><br><span class="line-number">373</span><br><span class="line-number">374</span><br><span class="line-number">375</span><br><span class="line-number">376</span><br><span class="line-number">377</span><br><span class="line-number">378</span><br><span class="line-number">379</span><br><span class="line-number">380</span><br><span class="line-number">381</span><br><span class="line-number">382</span><br><span class="line-number">383</span><br><span class="line-number">384</span><br><span class="line-number">385</span><br><span class="line-number">386</span><br><span class="line-number">387</span><br><span class="line-number">388</span><br><span class="line-number">389</span><br><span class="line-number">390</span><br><span class="line-number">391</span><br><span class="line-number">392</span><br><span class="line-number">393</span><br><span class="line-number">394</span><br><span class="line-number">395</span><br><span class="line-number">396</span><br><span class="line-number">397</span><br><span class="line-number">398</span><br><span class="line-number">399</span><br><span class="line-number">400</span><br><span class="line-number">401</span><br><span class="line-number">402</span><br><span class="line-number">403</span><br><span class="line-number">404</span><br><span class="line-number">405</span><br><span class="line-number">406</span><br><span class="line-number">407</span><br><span class="line-number">408</span><br><span class="line-number">409</span><br><span class="line-number">410</span><br><span class="line-number">411</span><br><span class="line-number">412</span><br><span class="line-number">413</span><br><span class="line-number">414</span><br><span class="line-number">415</span><br><span class="line-number">416</span><br><span class="line-number">417</span><br><span class="line-number">418</span><br><span class="line-number">419</span><br><span class="line-number">420</span><br><span class="line-number">421</span><br><span class="line-number">422</span><br><span class="line-number">423</span><br><span class="line-number">424</span><br><span class="line-number">425</span><br><span class="line-number">426</span><br><span class="line-number">427</span><br><span class="line-number">428</span><br><span class="line-number">429</span><br><span class="line-number">430</span><br><span class="line-number">431</span><br><span class="line-number">432</span><br><span class="line-number">433</span><br><span class="line-number">434</span><br><span class="line-number">435</span><br><span class="line-number">436</span><br><span class="line-number">437</span><br><span class="line-number">438</span><br><span class="line-number">439</span><br><span class="line-number">440</span><br><span class="line-number">441</span><br><span class="line-number">442</span><br><span class="line-number">443</span><br><span class="line-number">444</span><br><span class="line-number">445</span><br><span class="line-number">446</span><br><span class="line-number">447</span><br><span class="line-number">448</span><br><span class="line-number">449</span><br><span class="line-number">450</span><br><span class="line-number">451</span><br><span class="line-number">452</span><br><span class="line-number">453</span><br><span class="line-number">454</span><br><span class="line-number">455</span><br><span class="line-number">456</span><br><span class="line-number">457</span><br><span class="line-number">458</span><br><span class="line-number">459</span><br><span class="line-number">460</span><br><span class="line-number">461</span><br><span class="line-number">462</span><br><span class="line-number">463</span><br><span class="line-number">464</span><br><span class="line-number">465</span><br><span class="line-number">466</span><br><span class="line-number">467</span><br><span class="line-number">468</span><br><span class="line-number">469</span><br><span class="line-number">470</span><br><span class="line-number">471</span><br><span class="line-number">472</span><br><span class="line-number">473</span><br><span class="line-number">474</span><br><span class="line-number">475</span><br><span class="line-number">476</span><br><span class="line-number">477</span><br><span class="line-number">478</span><br><span class="line-number">479</span><br><span class="line-number">480</span><br><span class="line-number">481</span><br><span class="line-number">482</span><br><span class="line-number">483</span><br><span class="line-number">484</span><br><span class="line-number">485</span><br><span class="line-number">486</span><br><span class="line-number">487</span><br><span class="line-number">488</span><br><span class="line-number">489</span><br><span class="line-number">490</span><br><span class="line-number">491</span><br><span class="line-number">492</span><br><span class="line-number">493</span><br><span class="line-number">494</span><br><span class="line-number">495</span><br><span class="line-number">496</span><br><span class="line-number">497</span><br><span class="line-number">498</span><br><span class="line-number">499</span><br><span class="line-number">500</span><br><span class="line-number">501</span><br><span class="line-number">502</span><br><span class="line-number">503</span><br><span class="line-number">504</span><br><span class="line-number">505</span><br><span class="line-number">506</span><br><span class="line-number">507</span><br><span class="line-number">508</span><br><span class="line-number">509</span><br><span class="line-number">510</span><br><span class="line-number">511</span><br><span class="line-number">512</span><br><span class="line-number">513</span><br><span class="line-number">514</span><br><span class="line-number">515</span><br><span class="line-number">516</span><br><span class="line-number">517</span><br><span class="line-number">518</span><br><span class="line-number">519</span><br><span class="line-number">520</span><br><span class="line-number">521</span><br></div></div><h2 id="常用扩展"><a href="#常用扩展" class="header-anchor">#</a> 常用扩展</h2> <ol><li>通用的功能增强</li></ol> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 代码格式</span>
+Prettier
+eslint
+Alphabetical Sorter <span class="token comment"># 变量排序 优化代码排版</span>
+
+<span class="token comment"># 编辑器基础</span>
+code spell checker <span class="token comment"># 单词拼写检查</span>
+Chinese language <span class="token comment"># 简体中文界面</span>
+vscode-icons <span class="token comment"># 美丽的icon</span>
+Material Icon Theme <span class="token comment"># 主题</span>
+Image preview <span class="token comment"># 图片预览</span>
+Highlight Line <span class="token comment"># 编辑器当前行高亮</span>
+bracket pair colorize <span class="token comment"># 高亮匹配的（） {} []</span>
+Todo Tree <span class="token comment"># todo</span>
+Easy Snippet <span class="token comment"># 快速生成代码片段，配合 https://snippet-generator.app/</span>
+
+koroFileHeader <span class="token comment"># 文件头自动生成</span>
+Documentation this <span class="token comment"># 快速注释</span>
+Duplicate action <span class="token comment"># 快速复制</span>
+DotENV <span class="token comment"># . 文件</span>
+Formatting Toggle <span class="token comment"># 启用关闭格式化</span>
+
+<span class="token comment"># git 相关</span>
+Git Graph
+Git <span class="token function">history</span>
+gitLens
+gitignore
+
+<span class="token comment"># 代码智能提示</span>
+Github Copilot
+Tabnine
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br></div></div><ol start="2"><li>语言或者框架相关</li></ol> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># html</span>
+Highlight Matching Tag <span class="token comment"># 高亮匹配的 tag</span>
+auto <span class="token function">rename</span> tag <span class="token comment"># 自动重命名结束 tag</span>
+
+<span class="token comment"># css</span>
+Colorize <span class="token comment"># 颜色值高亮 【推荐】</span>
+Color Highlight <span class="token comment"># 颜色值高亮</span>
+
+<span class="token comment"># vue</span>
+Vue Language Features <span class="token punctuation">(</span>Volar<span class="token punctuation">)</span> <span class="token comment"># vue 语法高亮</span>
+
+<span class="token comment"># ts</span>
+Paste JSON as Code <span class="token comment"># json to type</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><ol start="3"><li>其他</li></ol></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"><div></div></div></div>
+    <script src="/blog/assets/js/app.f600d07b.js" defer></script><script src="/blog/assets/js/2.2efda491.js" defer></script><script src="/blog/assets/js/61.46bc7de5.js" defer></script>
+  </body>
+</html>
